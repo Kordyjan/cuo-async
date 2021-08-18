@@ -1,63 +1,0 @@
-
-¬examples/main.scala*'
-_empty_/main$package. *_empty_€*'
-_empty_/main$package.run().*run€*)
-_empty_/main$package.task().*task€*/
-"_empty_/main$package.task().(name)*name€*1
-#_empty_/main$package.task().(delay)*delay€*
-_empty_/run# *run€*)
-_empty_/run#`<init>`(). €@*<init>€*#
-_empty_/run#main(). € *main€*&
-_empty_/run#main().(args)*args€*
-local0 €*error€2
- 
-cuo/2
- 	cuo/Task.2
-_empty_/main$package.2
- scala/main#2)
-
- _empty_/main$package.run().21
-- 0#scala/continuations/Executor#run().22
- $cuo/SingleThreadExecutor#`<init>`().2'
- cuo/SingleThreadExecutor#2/
- +!java/lang/Thread#currentThread().2
- java/lang/Thread#2-
-5 5scala/ContextFunction1#apply().2(
-0 5cuo/tasks$package.await().2!
- cuo/Task.joining().2*
- _empty_/main$package.task().2*
- "_empty_/main$package.task().2-
-4 4scala/ContextFunction1#apply().2(
-/ 4cuo/tasks$package.await().2!
- cuo/Task.joining().2*
- _empty_/main$package.task().2*
- !_empty_/main$package.task().2-
- scala/ContextFunction1#apply().2(
- cuo/tasks$package.await().2*
- _empty_/main$package.task().2'
- scala/Predef.println(+1).2*
- _empty_/main$package.task().20
-	 "_empty_/main$package.task().(name)2"
- scala/Predef.String#21
- #_empty_/main$package.task().(delay)2
- "scala/Long#2
-% )	cuo/Task#2
-* .scala/Unit#2
-6 6cuo/Task.apply().2
-2 6	cuo/Task.2'
- 	scala/Predef.println(+1).2%
- java/lang/String#`+`().20
- "_empty_/main$package.task().(name)2-
- scala/ContextFunction1#apply().2(
- cuo/tasks$package.await().2"
- 
-cuo/Task.delaying().21
- #_empty_/main$package.task().(delay)2'
- 	scala/Predef.println(+1).2%
- java/lang/String#`+`().20
- "_empty_/main$package.task().(name)2
-_empty_/run#2!
-_empty_/run#`<init>`().2%
-_empty_/main$package.run().23
-)scala/util/CommandLineParser.showError().2
-local0PZ A7A66E2545F032AC11828F5EAC23051B
