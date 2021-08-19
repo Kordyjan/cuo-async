@@ -14,12 +14,7 @@ trait Task[+A]:
   def poll(waker: TimedWaker): Poll[A]
 
 object Task:
-  var mem = 0
-
   def delaying(millis: Long) = new Task[Unit]:
-    if (millis == 2500) then
-      mem += 1
-      if mem == 2 then Thread.dumpStack
     var timestamp: Long = 0
     def poll(waker: TimedWaker): Poll[Unit] =
       if timestamp == 0 then
@@ -80,4 +75,4 @@ end Task
 
 type Async[A] = AsyncContext#C ?=> A
 
-extension [Env, A](task: Task[A]) inline def await: Async[A] = summon[AsyncContext#C].suspend(task)
+extension [A](task: Task[A]) inline def await: Async[A] = summon[AsyncContext#C].suspend(task)
